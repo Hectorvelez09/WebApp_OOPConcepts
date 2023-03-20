@@ -19,16 +19,27 @@ namespace WebApp_OOPConcepts
 
                 Console.Write("Please type your month: ");
                 int month = Convert.ToInt32(Console.ReadLine());
-               
 
                 Console.Write("Please type your day: ");
                 int day = Convert.ToInt32(Console.ReadLine());
-              
-
 
                 var dateObject = new Date(year, month, day);
-                Console.WriteLine("The day entered is: " + dateObject);
-               
+                Console.WriteLine("\nThe day entered is: " + dateObject);
+
+                Employee SalaryEmployee = new SalaryEmployee() 
+                { 
+                Id = 1,
+                FirsName = "Patricia",
+                LastName = "Alvarez",
+                BirthtDate = dateObject,
+                HiringDate = dateObject,
+                IsActive = true,
+                Salary = 1160000
+                };  //Instanciando
+
+                Console.WriteLine(SalaryEmployee);
+
+
             }
             catch (Exception message)
             {
