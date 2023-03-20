@@ -28,7 +28,7 @@ namespace WebApp_OOPConcepts
 
                 Employee SalaryEmployee = new SalaryEmployee() 
                 { 
-                Id = 1,
+                Id = 100,
                 FirsName = "Patricia",
                 LastName = "Alvarez",
                 BirthtDate = new Date(year, month, day),
@@ -42,7 +42,7 @@ namespace WebApp_OOPConcepts
 
                 Employee CommisssionEmployee = new CommissionEmployee()
                 {
-                    Id = 1,
+                    Id = 200,
                     FirsName = "Julio",
                     LastName = "Perez",
                     BirthtDate = new Date(year, month, day),
@@ -70,7 +70,7 @@ namespace WebApp_OOPConcepts
                 bool isActive = Convert.ToBoolean(Console.ReadLine());
                 Console.WriteLine();
 
-                Console.Write("Please type the if is active: ");
+                Console.Write("Please type the value of the hour: ");
                 float hours = Convert.ToSingle(Console.ReadLine());
                 Console.WriteLine();
 
@@ -93,6 +93,22 @@ namespace WebApp_OOPConcepts
                 };  //Instanciando
 
                 Console.WriteLine(hourlyEmployee);
+
+
+                Employee baseCommissionEmployee = new BaseCommissionEmployee()
+                {
+                    Id = 400,
+                    FirsName = "Armando",
+                    LastName = "Tirado",
+                    BirthtDate = new Date(year, month, day),
+                    HiringDate = new Date(year, month, day),
+                    IsActive = true,
+                    CommissionPercentage = 10,
+                    Sales = 30000000,
+                    Base = 5000000
+                };  //Instanciando
+
+                Console.WriteLine(baseCommissionEmployee);
 
 
 
