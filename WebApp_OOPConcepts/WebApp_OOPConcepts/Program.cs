@@ -38,7 +38,21 @@ namespace WebApp_OOPConcepts
                 };  //Instanciando
 
                 Console.WriteLine(SalaryEmployee);
+                Console.WriteLine();
 
+                Employee CommisssionEmployee = new CommissionEmployee()
+                {
+                    Id = 1,
+                    FirsName = "Julio",
+                    LastName = "Perez",
+                    BirthtDate = dateObject,
+                    HiringDate = dateObject,
+                    IsActive = false,
+                    CommissionPercentage = 5,   
+                    Sales = 20000000
+                };  //Instanciando
+
+                Console.WriteLine(CommisssionEmployee);
 
             }
             catch (Exception message)
