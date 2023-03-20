@@ -19,7 +19,7 @@ namespace WebApp_OOPConcepts
         {
             return $"{base.ToString()}\n\t" +
             $"Base..................{Base:C2}\n\t" +
-            $"Total Value To Pay....{GetValueToPay():C2}";
+            $"Total................{GetValueToPay():C2}";
 
 
         }
